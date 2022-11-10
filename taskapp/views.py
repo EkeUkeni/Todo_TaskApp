@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
 from taskapp.models import Task
 from taskapp.forms import TaskForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required
 def index(request):
 
     # print(request.GET['search-area'])

@@ -53,4 +53,4 @@ def login_view(request):
 def logout_view(request):
     logout(request)
 
-    return redirect('account:signup')
+    return redirect('account:login')
